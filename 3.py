@@ -37,7 +37,7 @@ def life_support_rating(bytes: list, oxygen: bool) -> str:
 
 
 if __name__ == "__main__":
-    bytes = read_lines("input/day3.txt")
+    bytes = read_lines("input/3.txt")
     gamma, epsilon = power_consumption(bytes)
     print(int(gamma, 2) * int(epsilon, 2))
     oxygen_rating = life_support_rating(bytes, True)

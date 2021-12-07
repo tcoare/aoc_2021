@@ -24,7 +24,7 @@ def map_vent(coords, x1, y1, x2, y2, diagonal: bool=False):
                         coords.append(f"{x},{y2-(x-x2)}")
 
 if __name__ == "__main__":
-    path = "input/day5.txt"
+    path = "input/5.txt"
     lines = read_lines(path)
     coords = list()
     for line in lines:

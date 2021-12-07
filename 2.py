@@ -44,13 +44,14 @@ def run_commands(sub: NewSubmarine, commands: list):
 
 
 if __name__ == "__main__":
-    commands = read_lines("input/day2.txt")
+    commands = read_lines("input/2.txt")
     sub = Submarine()
     sub.run_commands(commands)
     # for part 2 aim is how we calculate depth so part 1 calulation becomes height * aim
-    print(sub.height * sub.aim, sub.height * sub.depth)
+    print(sub.height * sub.aim)
+    print(sub.height * sub.depth)
 
     # using smaller class and separate match case function
     new_sub = NewSubmarine()
     run_commands(new_sub, commands)
-    print(new_sub.height * new_sub.aim, new_sub.height * new_sub.depth)
+    # print(new_sub.height * new_sub.aim, new_sub.height * new_sub.depth)

@@ -23,6 +23,6 @@ def part_2(data):
 
 
 if __name__ == "__main__":
-    lines = read_lines("input/day1.txt")
+    lines = read_lines("input/1.txt")
     print(part_1(lines))
     print(part_2(lines))

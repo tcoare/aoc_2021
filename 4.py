@@ -60,7 +60,8 @@ def last_winning_score(numbers: list[int], boards: list[list[list[int]]]):
 
 
 if __name__ == "__main__":
-    numbers = get_numbers("input/day4.txt")
-    boards = get_boards("input/day4.txt")
+    path = "input/4.txt"
+    numbers = get_numbers(path)
+    boards = get_boards(path)
     print(winning_score(numbers, boards))
     print(last_winning_score(numbers, boards))
