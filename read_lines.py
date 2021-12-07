@@ -1,3 +1,3 @@
-def read_lines(path: str, type=None) -> list:
+def read_lines(path: str) -> list:
     with open(path) as f:
-        return [type(num).strip() for num in f.readlines()] if type else [line.strip() for line in f.readlines()]
+        return [line.strip() for line in f.readlines()]
